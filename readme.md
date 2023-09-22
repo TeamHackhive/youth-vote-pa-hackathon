@@ -13,3 +13,10 @@ We bundle our frontend files into a jar file and then deploy it onto our Tomcat 
 We currently have limited functionality that can be accessed via the frontend those are the voter registration form and the election info page.
 
 Behind the scenes we have a lot more APIS that are ready to go and all they need is the appropriate user interface pages and buttons to be used.
+
+## Deploying
+For the Java backend we use Maven as our package manager and bundler.
+1. Have an appropriate POM.xml file
+2. run the command `mvn clean`
+3. run the command `mvn install`
+
