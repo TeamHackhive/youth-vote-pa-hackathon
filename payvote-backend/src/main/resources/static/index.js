@@ -2,8 +2,8 @@
 // Dynamic menu item underlining based on active page
 const currentPage = window.location.pathname.split('/').pop();
 const menuItems = document.querySelectorAll('.header-content nav ul li');
-//const hostname = 'http://ec2-3-82-27-113.compute-1.amazonaws.com:8080'
-const hostname = 'http://localhost:8083/payvote'
+const hostname = 'http://ec2-3-82-27-113.compute-1.amazonaws.com:8083/payvote'
+//const hostname = 'http://localhost:8083/payvote'
 
 menuItems.forEach(item => {
     const link = item.querySelector('a');
