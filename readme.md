@@ -15,7 +15,7 @@ We currently have limited functionality that can be accessed via the frontend th
 Behind the scenes we have a lot more APIS that are ready to go and all they need is the appropriate user interface pages and buttons to be used.
 
 ## Deploying
-For the Java backend we use Maven as our package manager and bundler.
+For the Java backend we use Maven (version 3.8.1) as our package manager and bundler.
 1. Have an appropriate POM.xml file
 2. run the command `mvn clean`
 3. run the command `mvn install`
