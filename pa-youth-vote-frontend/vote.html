@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PA Youth Vote</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menu-icon">&#9776;</label>
+            <div class="header-content">
+                <h1>Youth Vote</h1>
+                <div class="menu-container">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="vote.html">Want to Vote?</a></li>
+                            <li><a href="elections.html">Election Info</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <form id="voter-reg-form">
+        <h1>Voter Information Form</h1>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="voterID">Voter ID:</label>
+                <input type="text" id="voterID" name="voterID">
+            </div>
+    
+            <div class="form-group">
+                <label for="voterFirstname">First Name:</label>
+                <input type="text" id="voterFirstname" name="voterFirstname">
+            </div>
+    
+            <div class="form-group">
+                <label for="voterLastname">Last Name:</label>
+                <input type="text" id="voterLastname" name="voterLastname">
+            </div>
+    
+            <div class="form-group">
+                <label for="voterTitle">Title:</label>
+                <input type="text" id="voterTitle" name="voterTitle">
+            </div>
+    
+            <div class="form-group">
+                <label for="voterEmail">Email:</label>
+                <input type="text" id="voterEmail" name="voterEmail">
+            </div>
+
+            <div class="form-group">
+                <label for="isUSCitizen">Are you a U.S. Citizen?</label>
+                <input type="checkbox" id="isUSCitizen" name="isUSCitizen">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            
+            <!-- Unit -->
+            <div class="form-group">
+                <label for="unit">Unit:</label>
+                <input type="text" id="unit" name="unit">
+            </div>
+            
+            <!-- City -->
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+            </div>
+            
+            <!-- State -->
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state">
+            </div>
+            
+            <!-- Zipcode -->
+            <div class="form-group">
+                <label for="zipcode">Zipcode:</label>
+                <input type="text" id="zipcode" name="zipcode">
+            </div>
+            
+            <!-- Has ID (Checkbox) -->
+            <div class="form-group">
+                <label for="hasID">Do you have ID?</label>
+                <input type="checkbox" id="hasID" name="hasID">
+            </div>
+            
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" name="dob">
+            </div>
+            
+            <!-- Phone 1 -->
+            <div class="form-group">
+                <label for="phone1">Phone 1:</label>
+                <input type="text" id="phone1" name="phone1">
+            </div>
+            
+            <!-- Phone 2 -->
+            <div class="form-group">
+                <label for="phone2">Phone 2:</label>
+                <input type="text" id="phone2" name="phone2">
+            </div>
+            
+            <!-- Registration Submission Date -->
+            <div class="form-group">
+                <label for="registrationSubmissionDate">Registration Submission Date:</label>
+                <input type="text" id="registrationSubmissionDate" name="registrationSubmissionDate">
+            </div>
+            
+            <!-- Registered Date -->
+            <div class="form-group">
+                <label for="registeredDate">Registered Date:</label>
+                <input type="text" id="registeredDate" name="registeredDate">
+            </div>
+            
+            <!-- Registration Current Status -->
+            <div class="form-group">
+                <label for="registrationCurrentStatus">Registration Current Status:</label>
+                <input type="text" id="registrationCurrentStatus" name="registrationCurrentStatus">
+
+            <!--
+    "address": "123 Main St",
+    "unit": "Apt 101",
+    "city": "New York",
+    "state": "NY",
+    "zipcode": "10001",
+    "hasID": true,
+    "dob": "1990-01-01T00:00:00.000+00:00",
+    "phone1": "123-456-7890",
+    "phone2": "987-654-3210",
+    "registrationSubmissionDate": null,
+    "registeredDate": null,
+    "registrationCurrentStatus": "Active"
+            -->
+            
+        </div>
+
+
+
+        <!-- Add more form groups for the remaining JSON data keys -->
+
+        <button type="submit">Submit</button>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Your Logo">
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vote.html">Want to Vote?</a></li>
+                        <li><a href="elections.html">Election Info</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 PA Youth Vote. All rights reserved.
+            </div>
+        </footer>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
