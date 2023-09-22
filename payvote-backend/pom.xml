@@ -11,7 +11,7 @@
 	<groupId>com.citihive</groupId>
 	<artifactId>payvote</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>payvote</name>
 	<description>PA Youth Vote Web application</description>
 	<properties>

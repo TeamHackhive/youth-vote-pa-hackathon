@@ -1,0 +1,284 @@
+:root {
+    --primary-color: #053B50;
+    --secondary-color: #176B87;
+    --accent-color: #EEEEEE;
+}
+
+header {
+    background-color: var(--primary-color);
+    color:#fff;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+
+@media (max-width: 768px) {
+    .header-content nav li {
+        font-size: 12px;
+    }
+    #menu-toggle:checked + #menu-icon + .header-content nav {
+        display: block;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .header-content nav {
+        display: none;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+nav ul li.active {
+    border-bottom: 2px solid #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container h4 {
+    text-transform: uppercase;
+}
+
+.hero-1 {
+    background-color: #053B50; /* Replace with your desired background color */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Make the hero section full viewport height */
+}
+
+.hero-1 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-1 p {
+    font-size: 18px;
+}
+
+.hero-2 {
+    background-color: var(--accent-color); /* Replace with your desired background color */
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Make the hero section full viewport height */
+}
+
+.hero-2 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-2 p {
+    font-size: 18px;
+}
+
+.hero-3 {
+    background-color: var(--secondary-color); /* Replace with your desired background color */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.hero-3 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-3 p {
+    font-size: 18px;
+}
+
+#voter-reg-form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+#voter-reg-form h1 {
+    color: #fff;
+}
+.form-container {
+    margin: 20px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: white;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    transition: border-color 0.3s; 
+}
+
+/* Change the border color on focus */
+input[type="text"]:focus {
+    border-color: #053B50; 
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #053B50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+footer {
+    background-color: #053B50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+}
+
+.footer-content > div {
+    flex: 1; /* Distribute available space equally among the children */
+    margin: 10px; /* Add spacing between items */
+}
+
+.footer-logo img {
+    max-width: 100px; /* Adjust the max width of the logo as needed */
+}
+
+.election-info-container h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+/* Elections html styling*/
+.election-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.election-card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.election-card p {
+    margin: 10px 0;
+}
+
+.election-card:hover {
+    background-color: var(--secondary-color); /* Change to your desired hover background color */
+    color: var(--accent-color); /* Change to your desired hover text color */
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+}
+
+@media (min-width: 768px) {
+    .election-card:hover {
+        transform: scale(1.03); /* Adjust the scale factor for larger screens */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .election-card {
+        margin: 10px 0;
+    }
+}
